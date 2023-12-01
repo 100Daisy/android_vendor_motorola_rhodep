@@ -36,6 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/etc/camera/vidhance_calibration_2rd:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration_2rd \
     vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/rhodep/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
+    vendor/motorola/rhodep/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
     vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_655.xml \
     vendor/motorola/rhodep/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_tm_1080p_dsc_655.xml \
     vendor/motorola/rhodep/proprietary/vendor/etc/sensors/config/ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_0.json \
@@ -159,6 +161,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/firmware/goodix-tianma-gt9916S-2201040d-61EA66BC-rhodep.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix-tianma-gt9916S-2201040d-61EA66BC-rhodep.bin \
     vendor/motorola/rhodep/proprietary/vendor/firmware/mot_dw9781c.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/mot_dw9781c.prog \
     vendor/motorola/rhodep/proprietary/vendor/firmware/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_s3nrn4v_firmware.bin \
+    vendor/motorola/rhodep/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_gc02m1_otp.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.mot.eeprom.mot_rhodep_s5k4h7_otp.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_gc02m1.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_ov16a1q.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.mot_s5k4h7.so \
@@ -261,6 +268,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/lib64/hw/fingerprint.focaltech.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.focaltech.default.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libBSTSWAD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTSWAD.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libRbsFlow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRbsFlow.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_shot.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libbitmlenginev2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlenginev2.so \
@@ -277,9 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnn.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libets_teeclient_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libets_teeclient_v2.so \
@@ -287,7 +293,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libipebpsstriping170.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping170.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/liblowlight_ai_portrait.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowlight_ai_portrait.arcsoft.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmfec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfec.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
@@ -297,20 +305,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_mfnr_t4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr_t4.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmot_afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmot_afd.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotext_inf.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotoisdataqueue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotoisdataqueue.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libmotohid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotohid.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinedump.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinedump.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libpowercore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowercore.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libqll10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqll10.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libqllengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqllengine.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
-    vendor/motorola/rhodep/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
+    vendor/motorola/rhodep/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libundistort_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libundistort_impl.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
     vendor/motorola/rhodep/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
